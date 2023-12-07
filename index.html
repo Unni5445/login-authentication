@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2fb667b054.js" crossorigin="anonymous"></script>
+    <title>Home Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.jpg" alt="Logo" width="50px">
+            <span>MEXANT</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="http://192.168.137.85:80/service.html">Services</a></li>
+                <li><a href="http://192.168.137.114:80/about/About.html">About</a></li>
+                <li><a href="http://192.168.137.235:80/HTML/1.html">Pages</a></li>
+                <li><a href="http://192.168.137.65/home.html">Testmanials</a></li>
+            </ul>
+            <button id="login-btn">Login</button>
+        </nav>
+    </header>
+    <main id="main">
+        <div class="arrow1">
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div class="arrow2">
+            <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="cont1">
+            <div class="head-main">
+                <h1>Get <span>ready</span> for your buiness & upgrade <span>all aspects</span></h1>
+            </div>
+            <div class="line"></div>
+            <div class="main-cont">
+                <p>
+                    Maxant HTML 5 Templete is provide for free of change.The layout if based on CSS3.Anyone can download
+                    and a edit for any professional website. Thank you for visting Our Page.
+                </p>
+            </div>
+            <div class="btns">
+                <button class="btn-d">Discover More</button>
+                <button class="btn-c">Contact Us</button>
+            </div>
+        </div>
+    </main>
+    <div class="login-popup hide">
+        <div class="login-page">
+            <div class="close-btn">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+            <div class="user-img">
+                <img src="assets/Data_security_05.jpg" alt="" width="250px">
+            </div>
+            <div class="form-page">
+                <form action=" ">
+                    <div class="user-name">
+                        <label>Email</label><br />
+                        <input type="email" name="email" id="email-id" placeholder="Enter your email Id">
+                    </div>
+                    <div class="user-pass">
+                        <label>Password</label><br />
+                        <input type="password" name="password" id="pass-id" placeholder="Enter your password">
+                    </div>
+                    <div class="btn-login">
+                        <button id="log">Login</button>
+                    </div>
+                    <h6>Don't Have Account ?<br> <a href="#" id="sign">Click here</a></h6>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="signup-pop" id="signup">
+        <div class="signup-page">
+            <div class="close-signbtn">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+            <div class="sign-img">
+                <img src="assets/Data_security_05.jpg" alt="" width="250px">
+            </div>
+            <div class="form-signup">
+                <form action="" id="Register_form">
+                    <div class="user-name">
+                        <label>Name</label><br />
+                        <input type="text" name="name" id="full_name" placeholder="Enter your name">
+                    </div>
+                    <div class="user-name">
+                        <label>Email</label><br />
+                        <input type="email" name="email" id="sign_email" placeholder="Enter your email Id">
+                    </div>
+                    <div class="user-ph">
+                        <label>Phone No</label><br />
+                        <input type="text" name="phone" id="sign_ph" placeholder="Enter your Phone">
+                    </div>
+                    <div class="user-pass">
+                        <label>Password</label><br />
+                        <input type="password" name="password" id="sign_pass" placeholder="Enter your password">
+                    </div>
+                    <div class="btn-signup">
+                        <button id="reg_btn">Register</button>
+                    </div>
+                    <h6>Already have a Account<br> <a href="#" id="log">Login here</a></h6>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="fire.js"></script>
+</body>
+
+</html>

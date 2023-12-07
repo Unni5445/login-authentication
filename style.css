@@ -1,0 +1,330 @@
+:root {
+    --primaryColor--: rgb(47, 193, 47);
+    --sencondaryColor: rgba(255, 0, 0, 0.875);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    background-image: url(assets/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    height: 100vh;
+    width: 100%;
+}
+
+body {
+    background-color: rgb(3, 3, 48);
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    position: relative;
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.logo img {
+    border-radius: 100%;
+    padding-right: 10px;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    padding: 0 10px;
+    list-style: none;
+}
+
+nav ul li {
+    padding-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--sencondaryColor);
+}
+
+nav button {
+    background-color: var(--primaryColor--);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: var(--sencondaryColor);
+    transform: scale(0.9);
+}
+
+main {
+    position: relative;
+    height: 90vh;
+}
+
+.arrow1 {
+    position: absolute;
+    right: 2%;
+    bottom: 50%;
+    font-size: 50px;
+    opacity: 0.9;
+    color: white;
+}
+
+.arrow2 {
+    position: absolute;
+    left: 2%;
+    bottom: 50%;
+    font-size: 50px;
+    opacity: 0.9;
+    color: white;
+}
+
+.cont1 {
+    padding: 10% 0 0 10%;
+    width: 45%;
+    color: white;
+}
+
+.head-main h1 {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.head-main h1 span {
+    color: var(--sencondaryColor);
+}
+
+.line {
+    content: "";
+    background-color: white;
+    width: 5rem;
+    height: 5px;
+    border-radius: 2px;
+}
+
+.main-cont {
+    padding: 20px 0;
+}
+
+.btn-d,
+.btn-c {
+    background-color: var(--primaryColor--);
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 10rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-c {
+    background-color: var(--sencondaryColor);
+    margin-left: 20px;
+}
+
+.btn-d:hover {
+    background-color: var(--sencondaryColor);
+    transform: scale(0.9);
+}
+
+.btn-c:hover {
+    background-color: var(--primaryColor--);
+    transform: scale(0.9);
+}
+
+.login-popup::before,
+.signup-pop::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+
+.login-popup,
+.signup-pop {
+    display: none;
+}
+
+
+.user-img,
+.sign-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page {
+    position: absolute;
+    top: 25%;
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    padding: 5px;
+    border-radius: 10px;
+    left: 25%;
+    display: flex;
+}
+
+.form-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.user-name,
+.user-pass,
+.user-ph {
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+.btn-login,
+.btn-signup {
+    padding: 0 10px 0 15px;
+}
+
+.form-page input {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-page button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    background-color: var(--primaryColor--);
+    border-radius: 5px;
+    box-shadow: 0 0 10px green;
+    cursor: pointer;
+}
+
+.form-page button:hover {
+    background-color: rgb(0, 255, 42);
+    transform: scale(0.8);
+    box-shadow: 0 0 10px rgb(0, 255, 42);
+}
+
+.close-btn i {
+    color: white;
+    font-size: 30px;
+    border: 2px rgb(0, 255, 42) solid;
+    border-radius: 100%;
+}
+
+.close-btn i:hover {
+    border: 2px red solid;
+}
+
+.close-btn {
+    position: relative;
+    top: -10%;
+    left: 100%;
+    cursor: pointer;
+}
+
+.form-page h6 {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.signup-page {
+    position: absolute;
+    top: 15%;
+    background-color: white;
+    width: 50%;
+    height: auto;
+    padding: 5px;
+    border-radius: 10px;
+    left: 25%;
+    display: flex;
+}
+
+.form-signup input {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-signup button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    background-color: var(--primaryColor--);
+    border-radius: 5px;
+    box-shadow: 0 0 10px green;
+    cursor: pointer;
+}
+
+.form-signup button:hover {
+    background-color: rgb(0, 255, 42);
+    transform: scale(0.8);
+    box-shadow: 0 0 10px rgb(0, 255, 42);
+}
+
+.close-signbtn i {
+    color: white;
+    font-size: 30px;
+    border: 2px rgb(0, 255, 42) solid;
+    border-radius: 100%;
+}
+
+.close-signbtn i:hover {
+    border: 2px red solid;
+}
+
+.close-signbtn {
+    position: relative;
+    top: -40px;
+    left: 100%;
+    cursor: pointer;
+}
+
+.form-signup h6 {
+    padding-left: 10px;
+    padding-top: 10px;
+}
